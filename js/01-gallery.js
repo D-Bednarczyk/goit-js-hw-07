@@ -32,11 +32,12 @@ function trigerModal(event) {
       onShow: (instance) => {
         /* const Elhelp = instance.element().querySelector("img");
         console.log(Elhelp); */
-        window.addEventListener("keypress", (e) => {
-          console.log(e.charCode);
+        window.addEventListener("keydown", (e) => {
+          console.log(e.key);
           if (e.key === "Escape") {
             // escape key maps to keycode `27`
             console.log("escape");
+            instance.close();
           }
         });
       },
