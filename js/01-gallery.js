@@ -17,25 +17,9 @@ function trigerModal(event) {
   const ModalImg = basicLightbox.create(
     `<img src="${event.target.parentNode.href}" width="800" height="600">`,
     {
-      /* onShow: (instance) =>
-        instance.element().addEventListener(
-          ("keypress",
-          (e) => {
-            console.log(e.keyCode);
-            console.log(e.key);
-            console.log(e.code);
-            console.log(e.shiftKey);
-          })
-        ), */
-      //onShow: (instance) => console.log(instance.element()),
-      /* onClose: (instance) => console.log("onClose", instance), */
       onShow: (instance) => {
-        /* const Elhelp = instance.element().querySelector("img");
-        console.log(Elhelp); */
         window.addEventListener("keydown", (e) => {
-          console.log(e.key);
           if (e.key === "Escape") {
-            // escape key maps to keycode `27`
             console.log("escape");
             instance.close();
           }
