@@ -31,7 +31,7 @@ function trigerModal(event) {
   ModalImg.show();
 
   //console.log("event.target: ", event.target.parentNode.href); //parenNode pokazuje rodzica targetu
-  //console.log("event.currentTarget: ", event.target.nodeName);
+  // console.log("event.currentTarget: ", event.target.nodeName);
 }
 
 //console.log(ElGalery);
